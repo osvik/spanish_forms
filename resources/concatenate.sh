@@ -3,7 +3,7 @@
 #HEAD
 
 cat css/bootstrap-custom.min.css css/simple_form.css > css/default-style.css
-echo "HEAD css: Concatenated bootstrap-custom.min.css and simple_form.css into abejas-style.css"
+echo "HEAD css: Concatenated bootstrap-custom.min.css and simple_form.css into default-style.css"
 
 cat js/modernizr.custom.44603.js js/createelement.js js/picturefill.min.js > js/library-head.min.js
 echo "HEAD JavaScript: Concatenated Modernizr, createelement.js and picturefill into the file library-head.min.js"
