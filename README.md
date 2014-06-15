@@ -55,5 +55,5 @@ Users can add an hash to the end of the URL and modify the page behavior. At the
 ## Tests
 
 - We include **unit tests** to help webbies check for html errors. Uncomment the html at the end of the page to enable unit testing.
-- We're doing some **browser tests**. Please check the document `Browser_tests.md`.
+- We're doing some **browser tests**. Please check the document [Browser_tests.md](https://github.com/osvik/spanish_forms/blob/master/Browser_tests.md).
 
