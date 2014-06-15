@@ -6,6 +6,10 @@ The template was developed to send data to **Engaging Networks**, but it can be 
 
 And of course it has to work well in **mobile phones**, tablets and desktop computers.
 
+## Status
+
+- The status of the bees form is: **BETA**. We need to conduct mobile browser tests.
+
 ## Design / Development
 
 - **Responsive** design with responsive images.
