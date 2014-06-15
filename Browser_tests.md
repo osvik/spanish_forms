@@ -2,26 +2,31 @@ This document lists the last tests that were made  with the forms. All combinati
 
 ## Data capture forms (Bees)
 
+Test includes submitting a form and checking that validation works. We also look at the visuals of both landing and thank you pages.
+
 ### Windows
 
 | Browser        | Result           | Date  |
 | -------------------- |:-------------:| -----:|
-| **Chrome 35** | - | - |
-| **Chrome 34** | - | - |
+| **Chrome 34 or 35** | - | - |
 | **Firefox 29** | - | - |
-| Firefox 12 | - | - |
-| **Internet Explorer 8** | - | - |
+| Firefox 12 | OK(1) | 15-06-2014 |
+| **Internet Explorer 8** | OK(2) | 15-06-2014 |
 | **Internet Explorer 9** | - | - |
 | Internet Explorer 10 | - | - |
-| **Internet Explorer 11** | - | - |
+| **Internet Explorer 11** | OK | 15-06-2014 |
+
+- **(1)** - I did test the form with a Firefox 3.6 (2010) on a Mac and it worked. The only logo didn't show because Modernizr didn't work. Firefox 12 was launched in 2012.
+- **(2)** - In the thank you page the social media buttons don't have icons (no svg support). The user will be able to understand the buttons because of it's labels and colors. The lack of icons can be fixed by replacing vectorials with png's when Modernizr.svg == false
+
 
 ### Mac
 
 | Browser        | Result           | Date  |
 | -------------------- |:-------------:| -----:|
-| **Safari 7** | - | - |
-| Chrome 35 | - | - |
-| Firefox 29 | - | - |
+| **Safari 7** | OK | 15-06-2014 |
+| Chrome 35 | OK | 15-06-2014 |
+| Firefox 29 | OK | 15-06-2014 |
 
 ### Linux
 
@@ -30,20 +35,17 @@ This document lists the last tests that were made  with the forms. All combinati
 | **Firefox 29** | - | - |
 | Chrome 33 | - | - |
 
-### Android
+### Android (Phone)
 
 | Browser        | Result           | Date  |
 | -------------------- |:-------------:| -----:|
-|  **Android browser 4** | - | - |
-| **Chrome 34 o 35** | - | - |
+|  **Android browser 4** | OK | 15-06-2014 |
+| **Chrome 34 o 35** | OK | 15-06-2014 |
 
-## IOS
+## IOS (Phone)
 
 | Browser        | Result           | Date  |
 | -------------------- |:-------------:| -----:|
-|  **Safari 7** | - | - |
-
-
-
+|  **Safari 7** | OK | 15-06-2014 |
 
 
