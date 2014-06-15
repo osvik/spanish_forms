@@ -8,7 +8,9 @@ if ( Modernizr.svg == false) {
 
 /* ---------- Counter ---------- */
 
-displayCounter(".number_of_signups");
+if ( $(".number_of_signups").length > 0) {
+        displayCounter(".number_of_signups");
+}
 
 /* ---------- /Counter ---------- */
 
