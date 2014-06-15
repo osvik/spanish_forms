@@ -14,9 +14,9 @@ cat js/jquery-1.11.1.min.js js/bootstrap-custom.min.js js/jquery.validate.min.js
 echo "FOOTER: Concatenated jQuery, bootstrap, jquery validate and help functions and saved in the file library-footer.min.js"
 
 cat js/scripts-landing.js js/tracking.js > js/landing_and_tracking.js
-echo "FOOTER: Concatenated scripts-landing-abejas.js and tracking.js into landing_and_tracking.js"
+echo "FOOTER: Concatenated scripts-landing.js and tracking.js into landing_and_tracking.js"
 
 cat js/scripts-thank-you.js js/tracking.js > js/thank_you_and_tracking.js
-echo "FOOTER: Concatenated scripts-landing-abejas.js and tracking.js into thank_you_and_tracking.js"
+echo "FOOTER: Concatenated scripts-landing.js and tracking.js into thank_you_and_tracking.js"
 
 
