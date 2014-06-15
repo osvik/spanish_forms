@@ -6,13 +6,21 @@ if ( Modernizr.svg == false) {
 
 /* ---------- /Fallback when the browser does not support svg ---------- */
 
-/* ---------- Counter ---------- */
+/* ---------- Signups, tweets and likes counters ---------- */
 
 if ( $(".number_of_signups").length > 0) {
-        displayCounter(".number_of_signups");
+    displayCounter(".number_of_signups");
 }
 
-/* ---------- /Counter ---------- */
+if ( $(".twetts_link_count").length > 0) {
+    displayTweets(".twetts_link_count");
+}
+
+if ( $(".facebook_likes_count").length > 0) {
+    displayLikes(".facebook_likes_count");
+}
+
+/* ---------- /Signups, tweets and likes counters ---------- */
 
 /* ---------- Privacy policy link and tab ---------- */
 

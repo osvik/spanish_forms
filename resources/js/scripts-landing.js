@@ -4,13 +4,21 @@ if ( Modernizr.svg == false) {
         $(".greenlogo").prop("src", "https://secured.greenpeace.org/espana/Global/espana/engaging/resources/images/greenpeace.png");
 }
 
-/* ---------- Counter ---------- */
+/* ---------- Signups, tweets and likes counters ---------- */
 
 if ( $(".number_of_signups").length > 0) {
-        displayCounter(".number_of_signups");
+    displayCounter(".number_of_signups");
 }
 
-/* ---------- /Counter ---------- */
+if ( $(".twetts_link_count").length > 0) {
+    displayTweets(".twetts_link_count");
+}
+
+if ( $(".facebook_likes_count").length > 0) {
+    displayLikes(".facebook_likes_count");
+}
+
+/* ---------- /Signups, tweets and likes counters ---------- */
 
 /* ---------- Form validation ---------- */
 

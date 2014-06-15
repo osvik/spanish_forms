@@ -88,7 +88,7 @@ margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.number_of_signups {
+.number_of_signups, .twetts_link_count, .facebook_likes_count {
     color: #080;    
 }
 

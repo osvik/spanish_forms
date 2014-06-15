@@ -15,6 +15,27 @@ function displayCounter (selector) {
         });
 }
 
+/* Uses Twitter API to get number of tweets */
+function displayTweets (selector) {
+        var url1 = "https://cdn.api.twitter.com/1/urls/count.json?url=";
+        var related_url = $(selector).data("url");
+        var url2="&callback=?";
+        $.getJSON( url1 + related_url + url2, function( data ) {
+            $(selector).text(data.count);
+        });
+}
+
+/* Uses Facebook API to get number of Likes */
+function displayLikes(selector) {
+        var url1 = "https://graph.facebook.com/fql?q=SELECT%20like_count,%20total_count,%20share_count,%20click_count,%20comment_count%20FROM%20link_stat%20WHERE%20url=%27";
+        var related_url = $(selector).data("url");
+        var url2="%27&callback=?";
+        $.getJSON( url1 + related_url + url2, function( data ) {
+            var total = data.data[0].total_count;
+            $(selector).text( total );
+        });
+}
+
 // Validates Spanish ID number - Returns: 1 = NIF ok, 2 = CIF ok, 3 = NIE ok, -1 = NIF error, -2 = CIF error, -3 = NIE error, 0 = ??? error
 function str_replace(e,t,n){var r=e,i=t,s=n;var o=i instanceof Array,u=s instanceof Array,r=[].concat(r),i=[].concat(i),a=(s=[].concat(s)).length;while(j=0,a--){if(s[a]){while(s[a]=s[a].split(r[j]).join(o?i[j]||"":i[0]),++j in r){}}}return u?s:s[0]}
 function valida_nif_cif_nie(e){var t=e.toUpperCase();var r="TRWAGMYFPDXBNJZSQVHLCKE";if(t!==""){if(!/^[A-Z]{1}[0-9]{7}[A-Z0-9]{1}$/.test(t)&&!/^[T]{1}[A-Z0-9]{8}$/.test(t)&&!/^[0-9]{8}[A-Z]{1}$/.test(t)){return 0}if(/^[0-9]{8}[A-Z]{1}$/.test(t)){posicion=e.substring(8,0)%23;letra=r.charAt(posicion);var s=t.charAt(8);if(letra==s){return 1}else{return-1}}suma=parseInt(e[2])+parseInt(e[4])+parseInt(e[6]);for(i=1;i<8;i+=2){temp1=2*parseInt(e[i]);temp1+="";temp1=temp1.substring(0,1);temp2=2*parseInt(e[i]);temp2+="";temp2=temp2.substring(1,2);if(temp2==""){temp2="0"}suma+=parseInt(temp1)+parseInt(temp2)}suma+="";n=10-parseInt(suma.substring(suma.length-1,suma.length));if(/^[KLM]{1}/.test(t)){if(e[8]==String.fromCharCode(64+n)){return 1}else{return-1}}if(/^[ABCDEFGHJNPQRSUVW]{1}/.test(t)){t=n+"";if(e[8]==String.fromCharCode(64+n)||e[8]==parseInt(t.substring(t.length-1,t.length))){return 2}else{return-2}}if(/^[T]{1}/.test(t)){if(e[8]==/^[T]{1}[A-Z0-9]{8}$/.test(t)){return 3}else{return-3}}if(/^[XYZ]{1}/.test(t)){pos=str_replace(["X","Y","Z"],["0","1","2"],t).substring(0,8)%23;if(e[8]==r.substring(pos,pos+1)){return 3}else{return-3}}}return 0}
