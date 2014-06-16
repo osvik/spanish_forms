@@ -56,11 +56,3 @@ $(".googleplus").on("click", function() {
 });
 
 /* ---------- /Tracking clicks in the donate button and social sharing buttons in Google Analytics   ---------- */
-
-/* ---------- Goal ---------- */
-
-typeof ga == "function" && ga('send', 'event', campaign_name, 'Signup', 'Signup' );
-typeof (_gaq ) == "object" && _gaq.push(['_trackEvent', campaign_name, 'Signup', 'Signup' ]);	
-
-/* ---------- /Goal ---------- */
-
