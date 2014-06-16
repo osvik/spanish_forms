@@ -4,6 +4,8 @@ This document lists the last tests that were made  with the forms. All combinati
 
 Test includes submitting a form and checking that validation works. We also look at the visuals of both landing and thank you pages.
 
+The page was also tested in many screen sizes, from 320x480 to 1920x900.
+
 ### Windows
 
 | Browser        | Result           | Date  |
@@ -12,7 +14,7 @@ Test includes submitting a form and checking that validation works. We also look
 | **Firefox 29** | - | - |
 | Firefox 12 | OK(1) | 15-06-2014 |
 | **Internet Explorer 8** | OK(2) | 15-06-2014 |
-| **Internet Explorer 9** | - | - |
+| **Internet Explorer 9** | OK | 16-06-2014 |
 | Internet Explorer 10 | - | - |
 | **Internet Explorer 11** | OK | 15-06-2014 |
 
@@ -32,8 +34,11 @@ Test includes submitting a form and checking that validation works. We also look
 
 | Browser        | Result           | Date  |
 | -------------------- |:-------------:| -----:|
-| **Firefox 29** | - | - |
-| Chrome 33 | - | - |
+| **Firefox 29** | OK | 16-06-2014 |
+| Chrome 33 | OK(3) | 16-06-2014 |
+
+- **(3)** - Tested with Chrome 35.
+
 
 ### Android (Phone)
 
