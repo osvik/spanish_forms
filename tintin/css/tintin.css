@@ -1,0 +1,130 @@
+body {
+    background-color: #333;
+/*    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/topbarbackground.png');    */
+}
+
+h1 {
+    color: #fff;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 47px;
+    line-height: 57px;
+}
+
+h2 {
+    color: #fff;
+    font-family: "Oswald";
+    text-transform: uppercase;    
+    margin-top: 0;
+}
+
+a {
+    color: #ffd504;
+}
+
+a:hover {
+    color: #ffd504;
+}
+
+label.error {
+    color: #fff;
+}
+
+label[for='privacy'] {
+    color: #fff;
+}
+
+
+.privacy_policy_link {
+    padding: 0px 0 10px 0;
+}
+
+.modal-content {
+    color: #fff;
+  background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );   
+}
+
+.modal-footer {
+    margin-top: 0;
+}
+
+.modal-header button.close {
+    color: rgba(255,255,255,1);
+    background: none;
+    opacity: 0.9;
+}
+
+#greenpeacelogo {
+    display: block;
+    text-align: right;
+}
+
+#legoLogo {
+    width: 102px;
+    height: auto;
+    position: absolute; z-index: 200;
+    margin-top: 5px;
+}
+
+#savethearcticlogo {
+    margin-top: 5px;
+}
+
+#maincontainer {
+    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/background.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+/*    height: 676px;*/
+}
+
+#targetLine {
+    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/target.png');
+    background-repeat: no-repeat;
+    height: 44px;
+    color: #fff;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 12px;
+}
+
+
+#logoHeadContainer {
+    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/topbarbackground.png');
+}
+
+#socialMediaLine {
+    text-align: right;
+}
+
+#formline {
+  background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );     
+}
+
+
+#detailedForm, #bigTitles {
+    padding: 10px;
+}
+
+#sign_up_button {
+    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/lego-button.png');
+    width: 160px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #444;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+#scrollDown {
+    color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 10px;
+}
