@@ -56,6 +56,14 @@ validator = $("#mainform").validate({
             es_phone: "Número de un fijo o móvil español valido. Ej. 622345679 (sin guiónes y sin espacios)"
             
         },
+        
+        "es.Prospecciones.subject": {
+            required: "El assunto del correo por favor"
+        },
+        "es.Prospecciones.body": {
+            required: "El texto del correo por favor"
+        },
+        
         privacy: {
             required: "Falta aceptar la política de privacidad"
         }
