@@ -1,0 +1,276 @@
+
+/* -------------------- GENERAL -------------------- */
+
+body {
+    background-color: #fff;
+    color: #141a1f;
+    color: #000;
+    font: 12px/18px "Verdana", "Geneva", "Arial","Helvetica",sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+}
+
+h1 {
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+    line-height: 17px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+a {
+    color: #3392c0;    
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 15px;
+}
+
+.alert {
+    margin-bottom: 3px;
+}
+
+.alert-warning {
+    background-color: #ffffcc;
+    color: #141a1f;
+    border-color: #ffeebb;
+}
+
+.greenlogo {
+    margin: 5px 0 5px 0;
+}
+
+.form-group {
+margin-bottom: 10px;
+}
+
+.form-control {
+    border: 1px solid #aaa;
+}
+
+.signups_paragraph {
+    margin-top: 20px;
+}
+
+.number_of_signups, .twetts_link_count, .facebook_likes_count {
+    color: #080;    
+}
+
+.GoToDonationForm {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.label {
+        color: #000;
+}
+
+.privacy_policy_link {
+    padding: 5px 0 20px 0;
+}
+
+label.error {
+    color: #f00;
+    font-weight: normal;
+}
+
+label.error { display: none; }
+
+ul.rrssb-buttons {
+    margin-bottom: 20px;
+}
+
+#logoHeadContainer, #footerContainer {
+    background-color: #66cc00;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#privacy_policy_text {
+    display: none;
+    margin: 15px 0 25px 0;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* --- 600px and up --- */
+
+@media (min-width: 600px ) {
+
+    h1 {
+       font-size: 30px;
+       line-height: 30px;
+    }
+    
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+    label {
+        font-size: 16px;
+        margin-top: 7px;
+        margin-bottom: 9px;
+    }
+    
+}
+
+/* --- 768px and up --- */
+
+@media (min-width: 768px ) {
+
+    h1 {
+       font-size: 30px;
+       line-height: 30px;
+    }
+    
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    h3 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+    
+    label {
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 1px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+    
+    .form-control {
+        height: 30px;
+    }
+    
+    .GoToDonationForm {
+        margin-bottom: 0px;
+    }
+    
+}
+
+/* --- 992px and up --- */
+
+@media (min-width: 992px ) {
+
+    h1 {
+       font-size: 38px;
+       line-height: 38px;
+       margin-top: 25px;
+       margin-bottom: 20px;
+    }
+    
+    h2 {
+        display: block;
+        padding-top: 0;
+        font-size: 27px;
+        line-height: 35px;
+        margin-top: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    
+    label {
+        font-size: 16px;
+    }
+
+    .greenlogo {
+        width: 170px;
+    }
+
+    .form-control {
+        height: 32px;
+    }
+    
+}
+    
+/* --- 1200px and up --- */
+
+@media (min-width: 1200px ) {
+    h1 {
+       font-size: 40px;
+       line-height: 40px;
+    }
+    
+    h2 {
+        display: block;
+        padding-top: 0;
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 10px;
+    }
+    
+    h3 {
+        font-size: 21px;
+        line-height: 29px;
+    }
+    
+    p, li {
+        font: 14px/21px "Verdana", "Arial","Helvetica",sans-serif;
+    }
+    
+    .form-control {
+        height: 34px;
+    }
+    
+    .lead {
+        font-size: 18px;
+    }
+
+}
