@@ -1,6 +1,7 @@
+/* ---- General ---- */
+
 body {
     background-color: #333;
-/*    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/topbarbackground.png');    */
 }
 
 h1 {
@@ -8,13 +9,16 @@ h1 {
     font-family: "Oswald";
     text-transform: uppercase;
     margin-top: 0;
-    font-size: 47px;
-    line-height: 57px;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 10px;
 }
 
 h2 {
     color: #fff;
     font-family: "Oswald";
+    font-size: 19px;
+    line-height: 31px;
     text-transform: uppercase;    
     margin-top: 0;
 }
@@ -27,23 +31,98 @@ a:hover {
     color: #ffd504;
 }
 
+/* ---- Background ---- */
+
+
+/* ---- Form ---- */
+
+input, textarea {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+textarea.form-control {
+    background-color: #fff;
+}
+
 label.error {
-    color: #fff;
+    color: #ffd504;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
 }
 
 label[for='privacy'] {
     color: #fff;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 17px;
 }
 
+.form-control {
+    font-size: 17px;
+}
 
 .privacy_policy_link {
     padding: 0px 0 10px 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
 }
+
+#sign_up_button {
+    background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/lego-button.png');
+    width: 130px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #444;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.no-cssgradients #formline {
+    background-color: rgb(230, 54, 35);
+}
+
+.cssgradients #formline {
+    background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background:-moz-linear-gradient( center top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) );
+    background-image: -ms-linear-gradient(top, #FF4C4C 0%, #DB0000 100%);
+    background-image: -o-linear-gradient(top, #FF4C4C 0%, #DB0000 100%);
+    background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );     
+}
+
+#detailedForm, #bigTitles {
+    padding: 10px;
+}
+
+#bigTitles p {
+    font-family: "Oswald";
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+#bigTitles a {
+    text-decoration: underline;
+}
+
+/* ---- Modal ---- */
 
 .modal-content {
     color: #fff;
-  background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-  background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );   
+}
+
+.no-cssgradients .modal-content {
+    background-color: rgb(219,15,15);
+}
+
+.cssgradients .modal-content {
+    background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background:-moz-linear-gradient( center top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) );
+    background-image: -ms-linear-gradient(top, #FF4C4C 0%, #DB0000 100%);
+    background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );   
 }
 
 .modal-footer {
@@ -51,14 +130,148 @@ label[for='privacy'] {
 }
 
 .modal-header button.close {
+    color: rgb(255,255,255);
     color: rgba(255,255,255,1);
     background: none;
     opacity: 0.9;
 }
 
+/* ---- Explaination ---- */
+
+.explaination {
+    padding: 10px;
+    margin-bottom: 20px;    
+}
+
+.no-cssgradients .exp1 {
+    background-color: rgb(254,214,0);
+}
+
+.cssgradients .exp1 {
+    background-image: -webkit-linear-gradient(top, rgba(245,244,40,0.9), rgba(254,214,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background:-moz-linear-gradient( center top, rgba(245,244,40,0.9), rgba(254,214,0,0.9) );
+    background-image:         linear-gradient(to bottom, rgba(245,244,40,0.9),  rgba(254,214,0,0.9) );  
+}
+
+.no-cssgradients .exp2 {
+    background-color: rgb(164,227,0);
+}
+
+.cssgradients .exp2 {
+    background-image: -webkit-linear-gradient(top, rgba(157,241,40,0.9), rgba(117,201,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background:-moz-linear-gradient( center top, rgba(157,241,40,0.9), rgba(117,201,0,0.9) );
+    background-image:         linear-gradient(to bottom, rgba(157,241,40,0.9),  rgba(117,201,0,0.9) );  
+}
+
+.no-cssgradients .exp3 {
+    background-color: rgb(52,184,239);
+}
+
+.cssgradients .exp3 {
+    background-image: -webkit-linear-gradient(top, rgba(22,203,255, 0.9), rgba(22,153,229,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background:-moz-linear-gradient( center top, rgba(22,203,255, 0.9), rgba(22,153,229,0.9) );
+    background-image:         linear-gradient(to bottom, rgba(22,203,255,0.9),  rgba(22,153,229,0.9) );  
+}
+
+.explaination h3 {
+    cursor: pointer;
+}
+
+.explaination h3, .modal h3  {
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.explaination p  {
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.rarrow {
+    vertical-align: middle;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.cssgradients .btn-warning {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffb75e;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffb75e;
+    box-shadow:inset 0px 1px 0px 0px #ffb75e;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f99513), color-stop(1, #e56c2b) );
+    background:-moz-linear-gradient( center top, #f99513 5%, #e56c2b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f99513', endColorstr='#e56c2b');
+    background-color:#f99513;
+    -webkit-border-top-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -moz-border-radius-topright:3px;
+    border-top-right-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    -moz-border-radius-bottomright:3px;
+    border-bottom-right-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-bottom-left-radius:3px;
+    text-indent:0;
+    border:1px solid #e56c2b;
+    display:inline-block;
+    color:#fff;
+    font-size: 19px;
+    line-height: 22px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #bf7113;
+    padding:5px 15px 5px 15px;
+}
+
+/* ---- Thank you page ---- */
+
+.endslide{
+    margin: 15px 0 15px 0;
+}
+
+.spacer {
+    height: 250px;
+}
+
+/* ---- Social media ---- */
+
+.socialbuttonscontainer {
+    margin: 0px 10px 10px 10px;
+}
+
+.facebook_likes_count, .twetts_link_count {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 4px 12px 4px 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+#socialMediaLine {
+    text-align: right;
+    display: none;
+}
+
+#socialMediaLine img {
+    margin-left: 15px;
+}
+
+/* ---- Top bar ---- */
+
 #greenpeacelogo {
     display: block;
     text-align: right;
+}
+
+.greenlogo {
+    width: 110px;
 }
 
 #legoLogo {
@@ -68,63 +281,211 @@ label[for='privacy'] {
     margin-top: 5px;
 }
 
-#savethearcticlogo {
-    margin-top: 5px;
+#legoLogo img {
+    width: 55px;
 }
 
-#maincontainer {
-    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/background.jpg');
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-/*    height: 676px;*/
+#savethearcticlogo {
+    margin-top: 5px;
+    width: 130px;
+}
+
+#logoHeadContainer {
+    background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/topbarbackground.png');
 }
 
 #targetLine {
-    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/target.png');
-    background-repeat: no-repeat;
-    height: 44px;
-    color: #fff;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-size: 21px;
-    padding: 12px;
-}
-
-
-#logoHeadContainer {
-    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/topbarbackground.png');
-}
-
-#socialMediaLine {
-    text-align: right;
-}
-
-#formline {
-  background-image: -webkit-linear-gradient(top, rgba(255,76,76,0.9), rgba(219,0,0,0.9) ); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-  background-image:         linear-gradient(to bottom, rgba(255,76,76,0.9),  rgba(219,0,0,0.9) );     
-}
-
-
-#detailedForm, #bigTitles {
-    padding: 10px;
-}
-
-#sign_up_button {
-    background-image: url('http://localhost:8888/engaging/spanish_forms/tintin/images/lego-button.png');
-    width: 160px;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px #444;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 36px;
-    text-align: center;
-    color: #fff;
+    display: none;
 }
 
 #scrollDown {
     color: #fff;
     font-family: 'Archivo Narrow', sans-serif;
     margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+
+/* --------------- Responsive --------------- */
+
+@media (min-width: 480px ) {
+
+}
+
+@media (min-width: 600px ) {   
+   h1 {
+        font-size: 33px;
+        line-height: 45px;
+   }
+
+    #targetLine {
+        display: block;
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/target.png');
+        background-repeat: no-repeat;
+        height: 44px;
+        color: #fff;
+        font-family: "Oswald";
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 12px;
+        margin-top: 70px;
+    }
+    
+   #savethearcticlogo {
+        width: 180px;
+   }
+   
+   #legoLogo img {
+        width: 60px;
+   }
+
+    .greenlogo {
+        with: 150px;
+    }
+
+    .explaination h3 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    
+    #socialMediaLine {
+        display: block;
+    }
+    
+    #targetLine {
+        margin-top: 0;
+    }
+    
+    #sign_up_button  {
+        font-size: 24px;
+        line-height: 36px;
+        width: 160px;
+    }
+    
+}
+
+@media (min-width: 768px ) {
+    
+   #savethearcticlogo {
+        width: 200px;
+   }
+   
+   #legoLogo img {
+        width: 75px;
+   }
+
+.greenlogo {
+    width: 160px;
+}
+
+
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    
+    h2 {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    label {
+        font-size: 17px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 33px;
+        line-height: 45px;
+        
+    }
+    
+    h2 {
+        font-size: 19px;
+        line-height: 31px;
+    }
+}
+
+/* --------------- Responsive backgrounds --------------- */
+
+#midContainer {
+/*    background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1280.jpg');
+*/    background-attachment: fixed;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 600px) {
+    #midContainer {
+      /*  background-image: none;*/
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #smallImageResponsive {
+        display: none;
+    }    
+    #midContainer {
+      background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-900-800.jpg');
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1000.jpg');
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1280.jpg');
+    }
+    
+    .spacer {
+        height: 470px;
+    }    
+}
+
+@media screen and (min-width: 1280px) {
+    
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1280.jpg');
+    }
+    
+}
+
+@media screen and (min-width: 1310px) {
+    
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1440.jpg');
+    }
+    
+}
+
+@media screen and (min-height: 1023px) and (min-width: 767px) {
+    
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-768-1024.jpg');
+    }
+    
+    .spacer {
+        height: 508px;
+    }
+}
+
+@media screen and (min-height: 800px) and (min-width: 1020px) {
+    #midContainer {
+        background-image: url('https://secured.greenpeace.org/espana/Global/espana/engaging/tintin/images/background-1568.jpg');
+    }
 }
