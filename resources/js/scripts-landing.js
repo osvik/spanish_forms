@@ -25,6 +25,12 @@ if ( $(".facebook_likes_count").length > 0) {
 validator = $("#mainform").validate({
     
     rules: {
+        first_name: {
+            es_first_name: true,
+        },
+        first_surname: {
+          es_first_surname: true,  
+        },
         id_number: {
             es_nifcifnie: true
         },
@@ -35,10 +41,12 @@ validator = $("#mainform").validate({
 
     messages: {
         first_name: {
-            required: "Tu nombre por favor"
+            required: "Tu nombre por favor",
+            es_first_name: "Tu nombre por favor"
         },  
         first_surname: {
-            required: "Tu primero apellido por favor"
+            required: "Tu primero apellido por favor",
+            es_first_surname: "Tu primero apellido por favor"
         }, 
         second_surname: {
             required: "Tu segundo apellido por favor"

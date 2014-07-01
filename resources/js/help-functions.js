@@ -45,6 +45,14 @@ jQuery.validator.addMethod("es_nifcifnie", function(value, element) {
 }, "Valid Spanish NIF, NIE or CIF for example 82451384H or X6909535J");
 
 jQuery.validator.addMethod("es_phone", function(value, element) {
-    return this.optional(element) || /^[6789]\d{8}$/.test(value);
+    return this.optional(element) || /^[6789]\d{8}$/.test(value) || value =="Teléfono, Ej. 623456789";
 }, "Spanish landline or mobile phone, for example 623456789");
+
+jQuery.validator.addMethod("es_first_name", function(value, element) {
+    return this.optional(element) || value!= "Nombre *";
+}, "Your first name, please");
+
+jQuery.validator.addMethod("es_first_surname", function(value, element) {
+    return this.optional(element) || value!= "1º Apellido *";
+}, "Your first surname, please");
 
