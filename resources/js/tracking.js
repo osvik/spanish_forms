@@ -23,16 +23,6 @@ if ( location.hash.search("notrack") == -1 && testing_form == false) {
     
     // ----------  /Google ANALYTICS ---------- 
 
-    // ----------  Google Remarketing ---------- 	  
-
-    var google_conversion_id = 1053230267;
-    var google_conversion_label = "1qrXCKWVjAUQu4mc9gM";
-    var google_custom_params = window.google_tag_params;
-    var google_remarketing_only = true;
-        // Need this in the hmtl <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">// <![CDATA[ // ]]></script><!-- Remkting -->
-    
-    // ----------  /Google Remarketing ---------- 
-
     // ----------  Yandex.Metrika counter ---------- 
     
     (function (d, w, c) {
