@@ -13,6 +13,14 @@
 		<link href="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/css/default-style.css" rel="stylesheet" type="text/css"><!-- Bootstrap library and custom CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
+		
+		<!-- Load the Content Experiment JavaScript API client for the experiment -->
+		<script src="https://www.google-analytics.com/cx/api.js?experiment=ehstV1fiTQqLANwQm2fEJQ"></script>
+
+		<script>
+			// Ask Google Analytics which variation to show the user.
+			var chosenVariation = cxApi.chooseVariation();
+		</script>
 			
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -109,7 +117,7 @@
 				
 				<p><small>&copy; Greenpeace / Nick Cobbing</small></p>
 				
-				<p>El hielo del Ártico, del que todos dependemos, está desapareciendo. Y lo está haciendo rápido. <strong>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</strong></p>
+				<div id="mod1"></div>
 				
 				<p>Durante más de 800.000 años el hielo ha sido una característica permanente del océano Ártico. Ahora se está derritiendo por el uso desmesurado de energías fósiles sucias y, en un futuro cercano, el hielo podría desaparecer por primera vez desde que los humanos pisamos la Tierra. Esto sería devastador tanto para los pueblos como para los osos polares, narvales, morsas y los demás moradores del Ártico, así como para el resto de la Humanidad.</p>
 				
@@ -146,7 +154,7 @@
 						<input type="text" class="form-control" id="first_surname" name="first_surname" placeholder="" required="required" maxlength="40" vcard_name="vCard.MiddleName" >
 					</div>
 					
-					<div class="form-group">
+					<div id="hide_xs" class="form-group">
 						<label for="second_surname">2º Apellido</label>
 						<input type="text" class="form-control" id="second_surname" name="second_surname" placeholder="" maxlength="40" vcard_name="vCard.LastName">
 					</div>
@@ -238,6 +246,27 @@
 		</script>
         
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-footer.min.js"></script><!-- jQuery, BootStrap, JQuery Validator and validator extra methods (library.min.js) -->
+		
+		<script>
+			// Define JavaScript for each page variation of this experiment.
+			var pageVariations = [
+				
+				function() { // Original: Do nothing. This will render the default HTML.
+					$('#mod1').html('<p>El hielo del Ártico, del que todos dependemos, está desapareciendo. Y lo está haciendo rápido. <strong>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</strong></p>');
+				},  
+				
+				function() {    // VARIATION 1: Banner Image
+					$('#mod1').html('<h3>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</h3>');
+					$('#hide_xs').addClass('hidden-xs');
+				}
+			];
+		
+			// Wait for the DOM to load, then execute the view for the chosen variation.
+			$(document).ready( function() {
+				pageVariations[chosenVariation]();
+			});
+		</script>
+
 		
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/landing_and_tracking.js"></script><!-- Validation, interaction and analytics scripts -->
 		
