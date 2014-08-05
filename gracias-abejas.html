@@ -14,6 +14,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type="text/css">
 		<link href='https://secured.greenpeace.org/espana/Global/espana/engaging/resources/css/rrssb.css' rel="stylesheet" type="text/css">
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
+
+		<!-- Load the Content Experiment JavaScript API client for the experiment -->
+		<script src="https://www.google-analytics.com/cx/api.js?experiment=L6PjCPqYSWuUpjJrJJG4YA"></script>
+
+		<script>
+			// Ask Google Analytics which variation to show the user.
+			var chosenVariation = cxApi.chooseVariation();
+		</script>
 			
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -106,7 +114,7 @@
 					</a>
 					</li>
 				
-					<li class="googleplus">
+					<li id="googleplus" class="googleplus">
 					<!-- Replace href with your meta and URL information.  -->
 					<a href="https://plus.google.com/share?url=https%3A%2F%2Fsecured.greenpeace.org%2Fespana%2Fes%2FQue-puedes-hacer-tu%2FSer-ciberactivista%2Fsalvar-abejas%2F%3Futm_medium%3Dsocial_network_link%26utm_source%3Dgoogle-mas%26utm_campaign%3DAbejas%26utm_content%3DGraciasAbejas%26utm_term%3DSocialShare" class="popup">
 						<span class="icon">
@@ -249,8 +257,29 @@
 		</script>
         
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-footer.min.js"></script><!-- jQuery, BootStrap, JQuery Validator and validator extra methods (library.min.js) -->
+
+		<script>
+			// Define JavaScript for each page variation of this experiment.
+			var pageVariations = [
+				
+				function() { // Original: Do nothing. This will render the default HTML.
+					
+				},  
+				
+				function() {    // VARIATION 1
+					$('#googleplus').remove();
+				}
+			];
+		
+			// Wait for the DOM to load, then execute the view for the chosen variation.
+			$(document).ready( function() {
+				pageVariations[chosenVariation]();
+			});
+		</script>
 		
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/rrssb.min.js"></script><!-- Social media buttons -->
+
+
 		
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/thank_you_and_tracking.js"></script><!--  Interaction and analytics -->	
 		
