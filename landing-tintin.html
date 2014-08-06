@@ -16,6 +16,14 @@
 		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>		
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head-tintin.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
 		
+		<!-- Google Analytics Content Experiment code -->
+		<script src="https://www.google-analytics.com/cx/api.js?experiment=1661Fx4hQpyh3DatleWvig"></script>
+		<script>
+			// Ask Google Analytics which variation to show the user.
+			cxApi.setDomainName('.greenpeace.org');
+			var chosenVariation = cxApi.chooseVariation();
+		</script>
+		
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -393,6 +401,25 @@ Un defensor del Ártico
 		</script>
         
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-footer.min.js"></script><!-- jQuery, BootStrap, JQuery Validator and validator extra methods (library.min.js) -->
+		
+		<script>
+			// Define JavaScript for each page variation of this experiment.
+			var pageVariations = [
+				
+				function() { // Original: Do nothing. This will render the default HTML.
+					$('#bigTitles a').css('text-decoration', 'none');
+				},  
+				
+				function() {    // VARIATION 1: Banner Image
+					$('#bigTitles a').css('text-decoration', 'underline');
+				}
+			];
+		
+			// Wait for the DOM to load, then execute the view for the chosen variation.
+			$(document).ready( function() {
+				pageVariations[chosenVariation]();
+			});
+		</script>
 		
 		<script type="text/javascript" src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/placeholders.min.js"></script><!-- Input placeholder attribute polyfill -->
 		
