@@ -14,11 +14,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
 		
-		<!-- Load the Content Experiment JavaScript API client for the experiment -->
+		<!-- Google Analytics Content Experiment code -->
 		<script src="https://www.google-analytics.com/cx/api.js?experiment=ehstV1fiTQqLANwQm2fEJQ"></script>
 
 		<script>
 			// Ask Google Analytics which variation to show the user.
+			cxApi.setDomainName('.greenpeace.org');
 			var chosenVariation = cxApi.chooseVariation();
 		</script>
 			
