@@ -14,14 +14,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
 		
-		<!-- Google Analytics Content Experiment code -->
-		<script src="https://www.google-analytics.com/cx/api.js?experiment=ehstV1fiTQqLANwQm2fEJQ"></script>
+		<!-- Google Analytics Content Experiment code 
+		<script src="https://www.google-analytics.com/cx/api.js?experiment=EXPERIMENT_ID"></script>
 
 		<script>
 			// Ask Google Analytics which variation to show the user.
 			cxApi.setDomainName('.greenpeace.org');
 			var chosenVariation = cxApi.chooseVariation();
 		</script>
+		-->
 			
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -118,7 +119,7 @@
 				
 				<p><small>&copy; Greenpeace / Nick Cobbing</small></p>
 				
-				<div id="mod1"></div>
+				<h3>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</h3>
 				
 				<p>Durante más de 800.000 años el hielo ha sido una característica permanente del océano Ártico. Ahora se está derritiendo por el uso desmesurado de energías fósiles sucias y, en un futuro cercano, el hielo podría desaparecer por primera vez desde que los humanos pisamos la Tierra. Esto sería devastador tanto para los pueblos como para los osos polares, narvales, morsas y los demás moradores del Ártico, así como para el resto de la Humanidad.</p>
 				
@@ -155,7 +156,7 @@
 						<input type="text" class="form-control" id="first_surname" name="first_surname" placeholder="" required="required" maxlength="40" vcard_name="vCard.MiddleName" >
 					</div>
 					
-					<div id="hide_xs" class="form-group">
+					<div class="form-group hidden-xs">
 						<label for="second_surname">2º Apellido</label>
 						<input type="text" class="form-control" id="second_surname" name="second_surname" placeholder="" maxlength="40" vcard_name="vCard.LastName">
 					</div>
@@ -252,13 +253,10 @@
 			// Define JavaScript for each page variation of this experiment.
 			var pageVariations = [
 				
-				function() { // Original: Do nothing. This will render the default HTML.
-					$('#mod1').html('<p>El hielo del Ártico, del que todos dependemos, está desapareciendo. Y lo está haciendo rápido. <strong>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</strong></p>');
+				function() { // Original: Do nothing.
 				},  
 				
-				function() {    // VARIATION 1: Banner Image
-					$('#mod1').html('<h3>En los últimos 30 años hemos perdido tres cuartas partes de la capa de hielo flotante de la cima de la Tierra.</h3>');
-					$('#hide_xs').addClass('hidden-xs');
+				function() {    // VARIATION 1
 				}
 			];
 		
