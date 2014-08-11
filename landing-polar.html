@@ -14,15 +14,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<script src="https://secured.greenpeace.org/espana/Global/espana/engaging/resources/js/library-head.min.js"></script><!-- Mondernizr (feature detection) and Picturefil 2 (responsive images)-->
 		
-		<!-- Google Analytics Content Experiment code 
-		<script src="https://www.google-analytics.com/cx/api.js?experiment=EXPERIMENT_ID"></script>
-
+		<!-- Google Analytics Content Experiment code -->
+		<script src="https://www.google-analytics.com/cx/api.js?experiment=-fyE_habTluO6neCkXMFLQ"></script>
+		
 		<script>
 			// Ask Google Analytics which variation to show the user.
 			cxApi.setDomainName('.greenpeace.org');
 			var chosenVariation = cxApi.chooseVariation();
 		</script>
-		-->
 			
 		<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -254,12 +253,32 @@
 			var pageVariations = [
 				
 				function() { // Original: Do nothing.
+				
 				},  
 				
 				function() {    // VARIATION 1
+					if ( $(window).width() < 600 ) {
+						
+						$('p').css('font-size', '13px' );
+						$('p.lead').css('font-size', '15px' );
+						$('h1').css('line-height', '27px');
+						$('h3').css('line-height', '22px');
+						
+					} else if ( $(window).width() >= 600 &&  $(window).width() < 768 ) {
+						
+						$('p').css('font-size', '13px' );
+						$('p.lead').css('font-size', '16px' );
+						
+					} else if ( $(window).width() >= 768 &&  $(window).width() < 1200 ) {
+						
+						$('p').css('font-size', '13px' );
+						$('p.lead').css('font-size', '15px' );
+					}
+					
+					
 				}
 			];
-		
+			
 			// Wait for the DOM to load, then execute the view for the chosen variation.
 			$(document).ready( function() {
 				pageVariations[chosenVariation]();
